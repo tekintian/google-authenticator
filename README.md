@@ -5,7 +5,7 @@ Google Authenticator + base64 qrcode PHP class
 
 PS: 本工具为安全类工具，$secret 为本工具安全的基础， 如果$secret 泄露，则本工具失去安全的意义！ 网上其他类似工具使用的第三方API生成二维码的方式是极不安全的！！！
 
-
+https://github.com/tekintian/google-authenticator
 
 This PHP class can be used to interact with the Google Authenticator mobile app for 2-factor-authentication. This class
 can generate secrets, generate codes, validate codes and present a QR-Code for scanning the secret. It implements TOTP 
@@ -20,7 +20,7 @@ Usage:
 
 - install dependency with composer
 ~~~sh
-composer require tekintian/GoogleAuthenticator
+composer require tekintian/google-authenticator
 ~~
 
 - example:
@@ -29,7 +29,7 @@ composer require tekintian/GoogleAuthenticator
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
 
-$ga = new tekintian\GoogleAuthenticator()
+$ga = new \tekintian\GoogleAuthenticator()
 $secret = $ga->createSecret();
 echo "Secret is: ".$secret."\n\n";
 

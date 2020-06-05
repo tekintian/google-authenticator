@@ -1,5 +1,5 @@
 {
-    "name": "tekintian/GoogleAuthenticator",
+    "name": "tekintian/google-authenticator",
     "description": "谷歌的两步验证PHP服务端，Google身份验证器 Google Authenticator PHP实现，Google Authenticator 2-factor authentication",
     "version": "1.0.0",
     "type": "library",
@@ -14,8 +14,8 @@
         }
     ],
     "support": {
-        "source": "https://github.com/tekintian/GoogleAuthenticator",
-        "issues": "https://github.com/tekintian/GoogleAuthenticator/issues"
+        "source": "https://github.com/tekintian/google-authenticator",
+        "issues": "https://github.com/tekintian/google-authenticator/issues"
     },
     "require": {
         "php": ">=7.0",

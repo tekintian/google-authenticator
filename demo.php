@@ -4,11 +4,11 @@
  * @Author: tekin
  * @Date:   2020-06-05 16:06:58
  * @Last Modified 2020-06-05
- * @Last Modified time: 2020-06-05 23:09:59
+ * @Last Modified time: 2020-06-05 23:36:39
  */
 require_once __DIR__ . '/vendor/autoload.php';
 
-include_once __DIR__ . '/test_helper.php';
+// include_once __DIR__ . '/test_helper.php';
 
 $ga = new tekintian\GoogleAuthenticator();
 
