@@ -21,9 +21,9 @@ Usage:
 - install dependency with composer
 ~~~sh
 composer require tekintian/google-authenticator
-~~
+~~~
 
-- example:
+- usage example:
 
 ~~~php
 <?php
