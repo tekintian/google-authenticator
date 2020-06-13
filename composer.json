@@ -1,7 +1,7 @@
 {
     "name": "tekintian/google-authenticator",
     "description": "谷歌的两步验证PHP服务端，Google身份验证器 Google Authenticator PHP实现，Google Authenticator 2-factor authentication",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "library",
     "keywords": ["Google Authenticator php","谷歌两步验证","两步验证","Authenticator","GoogleAuthenticator", "TOTP", "rfc6238"],
     "license": "BSD-4-Clause",
