@@ -20,23 +20,23 @@ class GoogleAuthenticator {
 	 * @return [type]         [description]
 	 */
 	public function getQRData($name, $secret, $title = null, $params = array()) {
-		$urlencoded = 'otpauth://totp/' . urlencode($name) . '?secret=' . $secret . '');
+		$urlencoded = 'otpauth://totp/' . urlencode($name) . '?secret=' . $secret . '';
 		if (isset($title)) {
-			$urlencoded .= '&issuer=' . urlencode($title));
+			$urlencoded .= '&issuer=' . urlencode($title);
 		}
 		return $urlencoded;
 	}
 
-	/**
-	 * 获取验证二维码， 默认返回base64图片数据，
-	 * @param  String      $name     [description]
-	 * @param  String      $secret   [description]
-	 * @param  String|null $title    [description]
-	 * @param  int|integer $ret_type [返回类型  默认1 base64数据； 0 直接输出； 2 写入到文件]
-	 * @param  String|null $out_file [$ret_type=2时的写入图片文件全路径]
-	 * @return [type]                [description]
-	 */
-	public function getQRCode(String $name, String $secret, String $title = null, int $ret_type = 1, String $out_file = null) {
+    /**
+     * 获取验证二维码， 默认返回base64图片数据，
+     * @param String        $name [description]
+     * @param String        $secret [description]
+     * @param String|null   $title [description]
+     * @param int|integer   $ret_type [返回类型  默认1 base64数据； 0 直接输出； 2 写入到文件]
+     * @param String|null   $out_file [$ret_type=2时的写入图片文件全路径]
+     * @return String|String [type]                [description]
+     */
+	public function getQRCode($name, $secret, $title = null, $ret_type = 0, $out_file = null) {
 		$urlencoded = 'otpauth://totp/' . urlencode($name) . '?secret=' . $secret;
 		if (isset($title)) {
 			$urlencoded .= '&issuer=' . urlencode($title);
